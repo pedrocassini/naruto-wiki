@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Formulário para sugerir conteúdo à Konoha Wiki."
+    />
+    <title>Contato | Konoha Wiki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&family=Source+Serif+4:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+    <header class="topbar">
+      <div class="topbar__in">
+        <a class="brand" href="index.html"
+          ><img
+            src="images/logo.svg"
+            alt="Espiral laranja, símbolo da Konoha Wiki"
+            width="32"
+            height="32"
+          />Konoha Wiki</a
+        >
+        <nav aria-label="Principal">
+          <a href="index.html">Início</a
+          ><a href="personagens.html">Personagens</a
+          ><a href="episodios.html">Episódios</a
+          ><a href="universo.html">Universo</a><a href="teorias.html">Teorias</a
+          ><a href="contato.html" aria-current="page">Contato</a>
+        </nav>
+      </div>
+    </header>
+    <main id="conteudo">
+      <div class="wrap wrap--narrow">
+        <h1>Sugerir conteúdo</h1>
+        <p class="lead">
+          Encontrou um erro ou quer ver algo novo na wiki? Preencha o formulário
+          abaixo.
+        </p>
+        <form action="#" method="post">
+          <p>
+            <label for="nome">Nome</label
+            ><input
+              type="text"
+              id="nome"
+              name="nome"
+              required
+              autocomplete="name"
+            />
+          </p>
+          <p>
+            <label for="email">E-mail</label
+            ><input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+            />
+          </p>
+          <p>
+            <label for="tipo">Tipo de sugestão</label>
+            <select id="tipo" name="tipo">
+              <option>Correção de informação</option>
+              <option>Novo personagem</option>
+              <option>Novo episódio</option>
+              <option>Teoria ou curiosidade</option>
+            </select>
+          </p>
+          <p>
+            <label for="msg">Mensagem</label
+            ><textarea id="msg" name="msg" rows="6" required></textarea>
+          </p>
+          <p>
+            <label class="check"
+              ><input type="checkbox" name="aceite" required /> Concordo em ter
+              minha sugestão publicada na wiki</label
+            >
+          </p>
+          <p><button class="btn" type="submit">Enviar sugestão</button></p>
+        </form>
+      </div>
+    </main>
+    <footer class="foot">
+      <p>
+        Konoha Wiki é um projeto acadêmico de fãs, sem fins lucrativos. Naruto é
+        criação de Masashi Kishimoto.
+      </p>
+      <p>Trabalho de Programação Web, Entrega 1 (HTML + CSS).</p>
+    </footer>
+  </body>
+</html>
