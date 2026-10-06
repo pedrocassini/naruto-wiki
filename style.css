@@ -19,6 +19,13 @@ body {
   font: 1.05rem/1.7 var(--body);
   color: var(--ink);
   background: var(--paper);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 h1,
@@ -196,6 +203,7 @@ section {
   color: var(--white);
   border-color: var(--white);
 }
+
 .btn--ghost:hover {
   background: var(--white);
   color: var(--ink);
@@ -207,9 +215,11 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   gap: 1.25rem;
 }
+
 .grid--2 {
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
 }
+
 .card {
   background: var(--white);
   border: 1px solid var(--line);
@@ -217,36 +227,45 @@ section {
   border-radius: 4px;
   overflow: hidden;
 }
+
 .card img {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
+  object-position: center top;
 }
+
 .card__b {
   padding: 1rem 1.1rem 1.2rem;
 }
+
 .card__b p {
   margin: 0.3em 0;
 }
+
 .aff {
   font-size: 0.95rem;
   color: #3d4660;
 }
+
 .panel {
   background: var(--white);
   border-left: 5px solid var(--blue);
   padding: 1rem 1.25rem;
   margin-bottom: 1rem;
 }
+
 .panel p {
   margin: 0;
 }
+
 .box {
   background: #e9edf8;
   border: 1px dashed var(--blue);
   padding: 1rem 1.25rem;
   border-radius: 4px;
 }
+
 .updates li {
   margin-bottom: 0.4rem;
 }
@@ -255,6 +274,7 @@ section {
 .scroll {
   overflow-x: auto;
 }
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -292,6 +312,7 @@ form label {
   font: 500 1rem var(--head);
   margin-bottom: 0.3rem;
 }
+
 input[type="text"],
 input[type="email"],
 select,
@@ -304,6 +325,7 @@ textarea {
   background: var(--white);
   color: var(--ink);
 }
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -311,12 +333,14 @@ textarea:focus {
   outline: none;
   box-shadow: 0 0 0 3px #bfcaf0;
 }
+
 .check {
   display: flex !important;
   gap: 0.6rem;
   align-items: flex-start;
   font-family: var(--body) !important;
 }
+
 .check input {
   margin-top: 0.45rem;
 }
@@ -329,6 +353,7 @@ textarea:focus {
   padding: 1.5rem 1.25rem;
   font-size: 0.9rem;
 }
+
 .foot p {
   margin: 0.2rem 0;
 }
@@ -338,23 +363,28 @@ textarea:focus {
   body {
     font-size: 1rem;
   }
+
   .topbar__in {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .hero__img {
     width: 120px;
     height: 120px;
   }
+
   .hero__in {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
   .grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
   }
 }
+
 @media (max-width: 400px) {
   .grid {
     grid-template-columns: 1fr;
