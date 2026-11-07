@@ -1,4 +1,4 @@
-# Trabalho Progração Web GA e GB
+# Trabalho Programação Web GA e GB
 
 ### 1. Visão Geral do Trabalho
  
